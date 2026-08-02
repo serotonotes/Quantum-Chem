@@ -225,18 +225,27 @@ form, and 3-D hybridization cases beyond SF₆/PCl₅. These are listed separate
 <h2>[R] Master router — what's given in the problem</h2>
 <table><thead><tr><th style="width:78%">What the problem gives / asks for</th><th>Go to</th></tr></thead>
 <tbody><tr><td>Asks whether two angular-momentum operators (or components) can be measured simultaneously</td><td class="go">→ [1]</td></tr>
+<tr><td>Asks to write $l_x,l_y,l_z$ in terms of position/momentum vector components</td><td class="go">→ [1]</td></tr>
 <tr><td>Asks for the magnitude / z-component / space-quantization angle $\theta$ of $l$, $s$, or $I$</td><td class="go">→ [2]</td></tr>
 <tr><td>Orbital/spin magnetic moment, Bohr magneton $\mu_B$, or $g$-value appears</td><td class="go">→ [2]</td></tr>
 <tr><td>Asks for the term symbol $^{2s+1}L_J$, or the number of levels/states, of a one-electron (e.g. hydrogen-like) state</td><td class="go">→ [3]</td></tr>
+<tr><td>Asks for a hydrogen-like ionization/binding energy $E_n$ (e.g. comparing $\mathrm{He^+}$ to H)</td><td class="go">→ [3]</td></tr>
 <tr><td>Asks for the effective nuclear charge $Z_{\mathrm{eff}}$ / screening constant $\sigma$ of a specific shell of a specific atom</td><td class="go">→ [4]</td></tr>
+<tr><td>Asks how many orbitals/electrons a subshell or shell $n$ can hold</td><td class="go">→ [4]</td></tr>
 <tr><td>Asks for the ground-state term symbol of a multi-electron atom with an open subshell (Hund's rule)</td><td class="go">→ [5]</td></tr>
+<tr><td>Asks why $s$ sits below $p$ in energy, why $4s$ fills before $3d$, or for the Cr/Cu exception configurations</td><td class="go">→ [5]</td></tr>
 <tr><td>H₂⁺ (a single electron), valence-bond vs. molecular-orbital method, or a variational secular determinant appears</td><td class="go">→ [6]</td></tr>
+<tr><td>Asks to define $H_{AA},H_{AB},S$ as integrals, or to derive the secular determinant from $\partial E/\partial c=0$</td><td class="go">→ [6]</td></tr>
+<tr><td>Asks about H₂⁺'s stability via $T,V,E$ vs. $R$, or invokes the virial theorem</td><td class="go">→ [6]</td></tr>
 <tr><td>Asks for the electron configuration / bond order / magnetism of a homonuclear or heteronuclear period-2 diatomic</td><td class="go">→ [7]</td></tr>
+<tr><td>Asks for the MO coefficient relationship ($\Psi_1,\Psi_2$ in terms of $a,b$) in a heteronuclear diatomic</td><td class="go">→ [7]</td></tr>
 <tr><td>Asks for percent ionic character from electronegativity difference</td><td class="go">→ [7]</td></tr>
 <tr><td>Asks for hybrid-orbital coefficients of a central atom (C, etc.), or which of $sp$/$sp^2$/$sp^3$/$sp^3d$/$sp^3d^2$ applies</td><td class="go">→ [8]</td></tr>
 <tr><td>Asks to predict molecular shape / bond angle via VSEPR theory</td><td class="go">→ [8]</td></tr>
 <tr><td>Asks for the Hückel approximation of a $\pi$-conjugated system (ethylene, butadiene, benzene, allyl radical, etc.)</td><td class="go">→ [9]</td></tr>
+<tr><td>Asks to compare total $\pi$-electron energy between a chain and ring with the same electron count</td><td class="go">→ [9]</td></tr>
 <tr><td>Asks for $\pi$-electron density $q_k$, bond order $p_{kl}$, or HOMO/LUMO</td><td class="go">→ [9]</td></tr>
+<tr><td>Asks you to actually expand a $3\times3$ or $4\times4$ secular determinant by hand, or find eigenvector coefficients from a matrix</td><td class="go">→ [11]</td></tr>
 <tr><td>Asks for a 300 K Boltzmann factor, or which spectroscopy corresponds to which excitation</td><td class="go">→ [10]</td></tr>
 <tr><td>Asks whether an atomic / diatomic-molecule / molecular transition is allowed or forbidden (selection rules)</td><td class="go">→ [10]</td></tr>
 <tr><td>Asks about fluorescence/phosphorescence, the Jablonski diagram, the Franck-Condon principle, or a UPS dissociation energy</td><td class="go">→ [10]</td></tr></tbody></table>
@@ -247,6 +256,12 @@ form, and 3-D hybridization cases beyond SF₆/PCl₅. These are listed separate
 <div class="tree">
 <h2><span class="num">1</span> Angular-momentum operators &amp; commutation relations <span class="orig">(角運動量の交換関係, p.360, 365-366)</span></h2>
 <div class="lead">Angular-momentum vector operator $\hat l=(\hat l_x,\hat l_y,\hat l_z)$, $\hat l^2=\hat l_x^2+\hat l_y^2+\hat l_z^2$.</div>
+
+<div class="card alt">
+<div class="res"><b>Starting point — Cartesian (classical) definition</b>, before switching to operators: $\boldsymbol l=\mathbf r\times\mathbf p$, componentwise</div>
+<div class="res">$l_x=$<span class="bl w"><span class="a">$yp_z-zp_y$</span></span>, &nbsp; $l_y=$<span class="bl w"><span class="a">$zp_x-xp_z$</span></span>, &nbsp; $l_z=$<span class="bl w"><span class="a">$xp_y-yp_x$</span></span></div>
+<div class="cite">By <b>definition (角運動量の定義)による</b> — promoting position/momentum to operators ($\hat p_x=\dfrac{\hbar}{i}\dfrac{\partial}{\partial x}$, etc.) turns these into $\hat l_x=\dfrac{\hbar}{i}\left(y\dfrac{\partial}{\partial z}-z\dfrac{\partial}{\partial y}\right)$ and its cyclic partners, which is the form used below.</div>
+</div>
 
 <div class="q"><span class="tag">Q1</span> Which commutator is being asked about?</div>
 
@@ -315,12 +330,19 @@ form, and 3-D hybridization cases beyond SF₆/PCl₅. These are listed separate
 <div class="tree">
 <h2><span class="num">3</span> LS coupling and fine structure (one-electron system) <span class="orig">(LS coupling, p.406-408)</span></h2>
 
+<div class="card alt">
+<div class="res"><b>Prerequisite — hydrogen-like (Bohr) energy levels</b> (one electron, nuclear charge $Z$)</div>
+<div class="res">$E_n=$<span class="bl xw"><span class="a">$-\dfrac{Z^2}{n^2}\times13.6\ \mathrm{eV}$</span></span> &nbsp; (equivalently $E_n=-\dfrac{m_ee^4Z^2}{8\varepsilon_0^2h^2n^2}$)</div>
+<div class="cite">By the <b>hydrogen-like atom energy formula(水素類似原子のエネルギー)による</b>.</div>
+<div class="ex"><b>Worked:</b> $\mathrm{He^+}$ ($Z=2$) has configuration $1s^1$; since energy scales as <span class="bl"><span class="a">$Z^2$</span></span>, its ionization energy is $2^2=4$ times that of neutral H's first ionization energy (13.6 eV) — i.e. $\mathrm{He^+}$'s ionization energy $\approx54.4$ eV.</div>
+</div>
+
 <div class="q"><span class="tag">Q1</span> Asked to find the term symbol of a one-electron state given $l$ and $s$?</div>
 
 <div class="card main">
 <div class="res">Total angular-momentum quantum number: $j=$<span class="bl xw"><span class="a">$l+s,\ l+s-1,\ \dots,\ |l-s|$</span></span></div>
 <div class="res">Term notation: $^{2s+1}L_j$ (multiplicity $2s+1$ as left superscript, $j$ as right subscript)</div>
-<div class="cite">By the <b>coupling of orbital and spin angular momentum(軌道角運動量とスピン角運動量の合成)による</b> (p.406).</div>
+<div class="cite">By the <b>coupling of orbital and spin angular momentum(軌道角運動量とスピン角運動量の合成)による</b> (p.406) — this $j$-range formula is specifically named the <b>Clebsch-Gordan series(クレブシュ・ゴードン級数)により</b>.</div>
 <div class="ex"><b>Worked:</b> hydrogen $2p^1$ ($l=1,s=1/2$): $j=3/2,1/2$ → terms are <span class="bl w"><span class="a">$^2P_{3/2},\ ^2P_{1/2}$</span></span>. For hydrogen, the smaller $j$ lies lower in energy.</div>
 </div>
 
@@ -343,6 +365,18 @@ form, and 3-D hybridization cases beyond SF₆/PCl₅. These are listed separate
 <div class="tree">
 <h2><span class="num">4</span> Effective nuclear charge &amp; Slater's rules <span class="orig">(有効核電荷とスレーター則)</span></h2>
 <div class="lead">$Z_{\mathrm{eff}}=Z-\sigma$ ($\sigma$: screening constant, スクリーニング定数)</div>
+
+<div class="card alt">
+<div class="res"><b>Prerequisite — orbitals per subshell &amp; max electrons</b> (needed to know how many electrons go in each Slater's-rule group)</div>
+<table class="symtab">
+<tr><th>subshell</th><th>$l$</th><th># orbitals $(2l+1)$</th><th>max electrons $2(2l+1)$</th></tr>
+<tr><td>s</td><td>0</td><td><span class="bl"><span class="a">$1$</span></span></td><td><span class="bl"><span class="a">$2$</span></span></td></tr>
+<tr><td>p</td><td>1</td><td><span class="bl"><span class="a">$3$</span></span></td><td><span class="bl"><span class="a">$6$</span></span></td></tr>
+<tr><td>d</td><td>2</td><td><span class="bl"><span class="a">$5$</span></span></td><td><span class="bl"><span class="a">$10$</span></span></td></tr>
+<tr><td>f</td><td>3</td><td><span class="bl"><span class="a">$7$</span></span></td><td><span class="bl"><span class="a">$14$</span></span></td></tr>
+</table>
+<div class="cite">By <b>definition (副殻の軌道の数と最大収容電子数)による</b> — summing $2(2l+1)$ over $l=0,\dots,n-1$ gives the shell total, max electrons in shell $n$ = <span class="bl"><span class="a">$2n^2$</span></span>.</div>
+</div>
 
 <div class="q"><span class="tag">Q1</span> Is the other electron <b>outside</b> (farther out than) the electron of interest?</div>
 <div class="card main">
@@ -380,6 +414,20 @@ $\sigma(4s)=0.35\times1+0.85\times14+1.00\times10=22.25\ \Rightarrow Z_{\mathrm{
 <div class="tree">
 <h2><span class="num">5</span> Ground-state term of a multi-electron atom (Hund's rule) <span class="orig">(多電子原子の基底状態のスペクトル項)</span></h2>
 <div class="lead">Closed subshells have $L=S=0$ and can be ignored; only the electrons in the <b>open subshell</b> matter.</div>
+
+<div class="card alt">
+<div class="res"><b>Prerequisite — why energy depends on both $n$ and $l$ in multi-electron atoms (unlike hydrogen)</b></div>
+<div class="res">The building-up (Aufbau) principle(構成原理): fill the lowest-energy orbital first (Pauli's exclusion principle limits each orbital to 2 electrons); for equal $n$, fill <span class="bl w"><span class="a">smaller $l$ first</span></span> (s, p, d, f order); for degenerate orbitals, spread electrons into different orbitals with <span class="bl w"><span class="a">parallel spins</span></span> first (Hund's rule).</div>
+<div class="cite">By the <b>Aufbau principle(構成原理)により</b>.</div>
+<div class="ex"><b>Why $s$ sits below $p$ in energy:</b> the $2s$ orbital <span class="bl xxw"><span class="a">partially penetrates inside the $1s$ shell</span></span>, so a $2s$ electron feels a larger effective nuclear charge than a $2p$ electron does — it's held more tightly and confined to a smaller region, lowering its energy.<br>
+<b>Why $4s$ fills before $3d$:</b> even though $n=4>3$, putting the next electron in $4s$ gives a <span class="bl xw"><span class="a">lower total atomic energy</span></span> than putting it in $3d$ — so K is $[\mathrm{Ar}]4s^1$ and Ca is $[\mathrm{Ar}]4s^2$, not $3d^1$/$3d^2$.</div>
+</div>
+
+<div class="card warn">
+<div class="res"><b>Cr and Cu exceptions</b> (3d and 4s energies become very close across period 4)</div>
+<div class="res">Cr: expected $[\mathrm{Ar}]4s^23d^4$, actual ground state = <span class="bl w"><span class="a">$[\mathrm{Ar}]4s^13d^5$</span></span>. Cu: expected $[\mathrm{Ar}]4s^23d^9$, actual ground state = <span class="bl w"><span class="a">$[\mathrm{Ar}]4s^13d^{10}$</span></span>.</div>
+<div class="cite">By the <b>Aufbau principle(構成原理)による</b> exception — a half-filled ($d^5$) or completely filled ($d^{10}$) $3d$ subshell, with every $3d$ electron spin-aligned, is more stable than the naive fill order predicts.</div>
+</div>
 
 <div class="q"><span class="tag">Q1</span> Have you found $L_{\max}, S_{\max}$? (fill electrons starting at $m_l=+l$ with $m_s=+1/2$; once every $m_l$ has one electron, continue filling from $m_l=+l$ again with $m_s=-1/2$)</div>
 <div class="card main">
@@ -426,11 +474,37 @@ $3d^7$ is <span class="bl xw"><span class="a">more than half-filled (7&gt;5)</sp
 </div>
 
 <div class="q"><span class="tag">Q2</span> Asked to find the bonding/antibonding orbital energies of H₂⁺ by the <b>variational method</b>?</div>
+
+<div class="card main">
+<div class="res"><b>Full derivation, step by step</b> (this is what problem 4-13 walks through) — start from $\psi=c_A\chi_A+c_B\chi_B$</div>
+<div class="ex">
+<b>(1) Define the three integrals</b> using the Hamiltonian $\hat H$:<br>
+Coulomb integral: $H_{ii}=$<span class="bl w"><span class="a">$\displaystyle\int\chi_i^*\hat H\chi_i\,d\tau$</span></span> ($i=A,B$)<br>
+Resonance integral: $H_{AB}=$<span class="bl xxw"><span class="a">$\displaystyle\int\chi_A^*\hat H\chi_B\,d\tau=\int\chi_B^*\hat H\chi_A\,d\tau=H_{BA}$</span></span><br>
+Overlap integral: $S=$<span class="bl xw"><span class="a">$\displaystyle\int\chi_A^*\chi_B\,d\tau=\int\chi_B^*\chi_A\,d\tau$</span></span><br><br>
+<b>(2) Write $E$ as a ratio of integrals</b>, then expand $\psi$ inside both:
+$$E=\frac{\int\psi^*\hat H\psi\,d\tau}{\int\psi^*\psi\,d\tau}=$$<span class="bl xxw"><span class="a">$\dfrac{c_A^2H_{AA}+2c_Ac_BH_{AB}+c_B^2H_{BB}}{c_A^2+c_B^2+2c_Ac_BS}$</span></span><br><br>
+<b>(3) Apply the variational condition</b> $\dfrac{\partial E}{\partial c_A}=0,\ \dfrac{\partial E}{\partial c_B}=0$ to the ratio above. Differentiating with respect to $c_A$ (product/quotient rule, then setting the numerator of the result to zero) gives:
+$$c_A(H_{AA}-E)+c_B(H_{AB}-ES)=0$$
+and differentiating with respect to $c_B$ gives the partner equation:
+$$c_A(H_{BA}-ES)+c_B(H_{BB}-E)=0$$
+Writing these two simultaneous equations as a matrix:
+$$\begin{pmatrix}H_{AA}-E & H_{AB}-ES\\ H_{BA}-ES & H_{BB}-E\end{pmatrix}\begin{pmatrix}c_A\\c_B\end{pmatrix}=\begin{pmatrix}0\\0\end{pmatrix}$$
+A nonzero $(c_A,c_B)$ solution exists only if this matrix's determinant is zero — <span class="bl xxw"><span class="a">that determinant condition is exactly the secular determinant</span></span> from Q2 below.<br><br>
+<b>(4) Solve</b>: expanding $(H_{AA}-E)(H_{BB}-E)-(H_{AB}-ES)^2=0$ into the quadratic $E^2(1-S^2)-E(H_{AA}+H_{BB}-2H_{AB}S)+(H_{AA}H_{BB}-H_{AB}^2)=0$ and solving for $E$ gives $E_1,E_2$ below.
+</div>
+</div>
+
 <div class="card main">
 <div class="res"><b>Secular determinant(永年行列式)</b>: $(H_{AA}-E)(H_{BB}-E)-(H_{AB}-ES)^2=0$; for the homonuclear case $H_{AA}=H_{BB}=\alpha$, $H_{AB}=H_{BA}=\beta$ ($\alpha,\beta&lt;0$)</div>
 <div class="res">$E_1=$<span class="bl w"><span class="a">$\dfrac{\alpha+\beta}{1+S}$</span></span> (bonding, lower), &nbsp; $E_2=$<span class="bl w"><span class="a">$\dfrac{\alpha-\beta}{1-S}$</span></span> (antibonding, higher)</div>
 <div class="cite">By the <b>variational method for H₂⁺'s MO(H₂⁺のMO法による変分法)により</b> (p.431) — the overlap integral between the same orbital is $S=1$, and between different atoms it is <span class="bl w"><span class="a">$0&lt;S&lt;1$</span></span>.</div>
 <div class="ex"><b>Worked:</b> the wavefunctions are $\psi_1=\dfrac{\chi_A+\chi_B}{\sqrt{2+2S}}$ (bonding, $\sigma_g$), $\psi_2=\dfrac{\chi_A-\chi_B}{\sqrt{2-2S}}$ (antibonding, $\sigma_u$).</div>
+</div>
+
+<div class="card lecture">
+<div class="res"><b>Why H₂⁺ is stable</b>: plot kinetic energy $T$, potential energy $V$, and total $E=T+V$ vs. nuclear separation $R$ — $E$ has a minimum at the equilibrium bond length $R_{eq}=2a_0$.</div>
+<div class="cite">By the <b>virial theorem(ビリアル定理)により</b>, at that equilibrium point specifically: <span class="bl"><span class="a">$V=-2T$</span></span>.</div>
 </div>
 
 <div class="card main">
@@ -460,6 +534,13 @@ $3d^7$ is <span class="bl xw"><span class="a">more than half-filled (7&gt;5)</sp
 <div class="res">$E=$<span class="bl xw"><span class="a">$\dfrac{\alpha_A+\alpha_B}{2}\pm\sqrt{\left(\dfrac{\alpha_A-\alpha_B}{2}\right)^2+\beta^2}$</span></span></div>
 <div class="cite">By the <b>MO energies of heteronuclear diatomics(異核二原子分子のMOエネルギー)より</b> (p.451) — the bonding-orbital coefficient leans toward whichever atom's $\alpha$ is <span class="bl xxw"><span class="a">lower (more stable/more electronegative)</span></span>.</div>
 <div class="ex"><b>Worked:</b> in HF's $3\sigma$ (bonding) orbital, the contribution from F's $2p_z$ is larger than from H's $1s$, so the bonding electron pair is skewed toward F (→ a polar covalent bond).</div>
+</div>
+
+<div class="card alt">
+<div class="res"><b>Coefficient relationship for the heteronuclear case</b> (an extension of Q2, not always required, but shows how $\Psi_1,\Psi_2$'s coefficients relate)</div>
+<div class="res">From the same homogeneous system as Tree 6's derivation, plugging in $E_1,E_2$: $\dfrac{c_{B1}}{c_{A1}}=-\dfrac{c_{A2}}{c_{B2}}$, so if $c_{A1}=a,\ c_{B1}=b$ (with $0<a<b$, since the bonding MO leans toward the lower-$\alpha$ atom), then $c_{A2}=b,\ c_{B2}=-a$</div>
+<div class="cite">By the <b>MO energies of heteronuclear diatomics(異核二原子分子のMOエネルギー)より</b> (p.451).</div>
+<div class="ex"><b>Worked:</b> $\Psi_1=$<span class="bl w"><span class="a">$a\chi_A+b\chi_B$</span></span> (bonding), &nbsp; $\Psi_2=$<span class="bl w"><span class="a">$b\chi_A-a\chi_B$</span></span> (antibonding) — notice the coefficients literally swap (with one sign flipped) between the two MOs.</div>
 </div>
 
 <div class="q"><span class="tag">Q3</span> Asked for the percent <b>ionic character</b> from electronegativity differences?</div>
@@ -528,14 +609,88 @@ $3d^7$ is <span class="bl xw"><span class="a">more than half-filled (7&gt;5)</sp
 <b>benzene</b> (6C ring): $x^6-6x^4+9x^2-4=0\Rightarrow E=\alpha\pm2\beta,\ \alpha\pm\beta$ (each a double root).</div>
 </div>
 
+<div class="card alt">
+<div class="res"><b>Total $\pi$-electron energy $E_\pi=\sum_i n_iE_i$</b> — fill electrons into the levels found above (lowest first, Hund's rule for ties), then sum</div>
+<div class="ex">
+<b>3 electrons, chain vs. ring</b> (allyl vs. cyclopropenyl): 2 electrons fill the lowest level, 1 electron goes into the next.<br>
+chain: $E_\pi=2(\alpha+\sqrt2\beta)+1(\alpha)=$<span class="bl w"><span class="a">$3\alpha+2\sqrt2\beta$</span></span><br>
+ring: $E_\pi=2(\alpha+2\beta)+1(\alpha-\beta)=$<span class="bl"><span class="a">$3\alpha+3\beta$</span></span><br>
+since $\beta<0$, the ring's total is <span class="bl xw"><span class="a">more negative (more stable)</span></span> — the cyclic (aromatic-like) arrangement is favored even with an odd/incomplete electron count.<br><br>
+<b>1,3-butadiene, 4 electrons</b> (2 fill $E_1$, 2 fill $E_2$): $E_\pi=2(\alpha+1.62\beta)+2(\alpha+0.62\beta)=$<span class="bl w"><span class="a">$4\alpha+4.48\beta$</span></span> — only $0.48\beta$ more stable than two isolated ethylenes ($4\alpha+4\beta$), the modest "resonance stabilization" of a conjugated (but non-cyclic) chain.<br>
+Coefficients for the lowest MO $\psi_1$: solving the eigenvector equations and normalizing gives $c_1=c_4\approx$<span class="bl"><span class="a">$0.372$</span></span>, $c_2=c_3\approx$<span class="bl"><span class="a">$0.602$</span></span>, i.e. $\psi_1=0.372\chi_1+0.602\chi_2+0.602\chi_3+0.372\chi_4$.
+</div>
+</div>
+
 <div class="q"><span class="tag">Q3</span> Asked for $\pi$-electron density $q_k$, bond order $p_{kl}$, or HOMO/LUMO?</div>
 <div class="card main">
 <div class="res">$q_k=\displaystyle\sum_{i}^{occ}n_ic_{ik}^2$, &nbsp; $p_{kl}=\displaystyle\sum_i^{occ}n_ic_{ik}c_{il}$ ($n_i$: number of electrons in that MO)</div>
 <div class="cite">By the <b>$\pi$-electron density and bond-order formulas($\pi$電子密度と結合次数)より</b>. HOMO = highest occupied MO, LUMO = lowest unoccupied MO.</div>
-<div class="ex"><b>Worked, benzene</b>: by symmetry $q_k=1$ at every carbon, and every adjacent C–C $\pi$-bond order is $p=2/3$ — adding the $\sigma$ bond (1) gives a total bond order of <span class="bl"><span class="a">$1.67$</span></span> (larger than the 1.5 suggested by a simple resonance picture). <b>Butadiene</b>: HOMO $=\psi_2(E=\alpha+0.62\beta)$, LUMO $=\psi_3(E=\alpha-0.62\beta)$; conjugation shifts its absorption to a longer wavelength (217 nm) than ethylene's (165 nm).</div>
+<div class="ex"><b>Worked, benzene</b>: by symmetry $q_k=1$ at every carbon, and every adjacent C–C $\pi$-bond order is $p=2/3$ — adding the $\sigma$ bond (1) gives a total bond order of <span class="bl"><span class="a">$1.67$</span></span> (larger than the 1.5 suggested by a simple resonance picture). <b>Butadiene</b>: HOMO $=\psi_2(E=\alpha+0.62\beta)$, LUMO $=\psi_3(E=\alpha-0.62\beta)$; conjugation shifts its absorption to a longer wavelength (217 nm) than ethylene's (165 nm). Using $c_1=c_4=0.372,\ c_2=c_3=0.602$ (from $\psi_1$) and $\psi_2$'s coefficients, the bond orders come out <span class="bl w"><span class="a">unequal</span></span>: $p_{12}=p_{34}\approx0.896$ (the two "double" bonds, each weaker than a full double bond) but $p_{23}\approx0.448$ (the central "single" bond has real double-bond character — consistent with its measured 1.48 Å length being shorter than a normal 1.54 Å C–C single bond).</div>
 </div>
 
 <div class="trap"><b>[!] Trap</b>: cyclobutadiene's $\psi_2,\psi_3$ are <span class="bl w"><span class="a">degenerate</span></span> at $E=\alpha$, so by Hund's rule the two electrons go in singly, giving a <b>triplet ground state</b> — don't confuse this with butadiene (the chain form), which has no such degeneracy.</div>
+</div>
+
+
+<div class="tree">
+<h2><span class="num">11</span> How to expand a secular determinant by hand <span class="orig">(行列式の展開方法, 3×3・4×4行列式の求め方)</span></h2>
+<div class="lead">This is the general mechanical skill behind every Hückel/H₂⁺ problem — shown here on 1,3-butadiene's actual $4\times4$ matrix, worked exactly the way problem 5-10 does it.</div>
+
+<div class="q"><span class="tag">Q1</span> Is your determinant $3\times3$?</div>
+<div class="card main">
+<div class="res"><b>Sarrus's rule(サラスの方法)</b> — only valid for $3\times3$:</div>
+<div class="res">$\begin{vmatrix}a&b&c\\d&e&f\\g&h&i\end{vmatrix}=$<span class="bl xw"><span class="a">$(aei+bfg+chd)-(ahf+bdi+ceg)$</span></span></div>
+<div class="cite">By <b>Sarrus's rule(サラスの方法)による</b> — <span class="bl xxw"><span class="a">this shortcut does NOT work for $4\times4$ or larger</span></span>; use cofactor expansion instead (Q2 below).</div>
+</div>
+
+<div class="q"><span class="tag">Q2</span> Is your determinant $4\times4$ or larger?</div>
+<div class="card main">
+<div class="res"><b>Cofactor (minor) expansion</b> — pick one row or column, expand along it</div>
+<div class="res">Each cofactor = the smaller determinant left after deleting that element's row $i$ and column $j$, multiplied by <span class="bl w"><span class="a">$(-1)^{i+j}$</span></span></div>
+<div class="cite">By <b>cofactor expansion(余因子展開)による</b> — expanding along the <b>first row</b> is the conventional choice(慣習).</div>
+</div>
+
+<div class="card main">
+<div class="res"><b>Full worked example — 1,3-butadiene's secular determinant</b> (4 carbons in a chain, $x=(\alpha-E)/\beta$)</div>
+<div class="ex">
+<b>Step 1 — write the $4\times4$ matrix</b> (diagonal $=x$, bonded-neighbor off-diagonal $=1$, everything else $=0$; carbons numbered 1-2-3-4 in a chain, so only adjacent pairs are bonded):
+$$\begin{vmatrix}x&1&0&0\\1&x&1&0\\0&1&x&1\\0&0&1&x\end{vmatrix}=0$$
+
+<b>Step 2 — expand along the first row.</b> Row 1 has entries $(x,\,1,\,0,\,0)$, so only the first two cofactors contribute (anything multiplied by a 0 entry drops out):
+$$=x\begin{vmatrix}x&1&0\\1&x&1\\0&1&x\end{vmatrix}\ (-1)^{1+1}\ -\ 1\begin{vmatrix}1&1&0\\0&x&1\\0&1&x\end{vmatrix}\ (-1)^{1+2}$$
+
+<b>Step 3 — evaluate each $3\times3$ minor with Sarrus's rule.</b>
+First minor: $x(x^2-1)-1(x-0)+0=x^3-2x$.
+Second minor: $1(x^2-1)-1(0-0)+0=x^2-1$.
+
+<b>Step 4 — combine</b> (note the second term already carries a $(-1)^{1+2}=-1$, so subtracting it again flips back to $+$):
+$$x(x^3-2x)-1\cdot(x^2-1) = x^4-2x^2-x^2+1 = $$<span class="bl w"><span class="a">$x^4-3x^2+1=0$</span></span>
+
+<b>Step 5 — factor.</b> This biquadratic factors as $(x^2+x-1)(x^2-x-1)=0$ — <span class="bl xw"><span class="a">verify by multiplying back out</span></span> and confirming the $x^3$ and $x^1$ terms cancel. Each quadratic factor gives two roots via the quadratic formula:
+$$x=\frac{-1\pm\sqrt5}{2},\ \frac{1\pm\sqrt5}{2}$$
+
+<b>Step 6 — convert back to energies</b> with $E=\alpha-\beta x$, ordering from most-negative $x$ (lowest $E$) to most-positive $x$ (highest $E$):
+$$E_1=\alpha+1.62\beta,\ \ E_2=\alpha+0.62\beta,\ \ E_3=\alpha-0.62\beta,\ \ E_4=\alpha-1.62\beta$$
+</div>
+</div>
+
+<div class="card alt">
+<div class="res"><b>Finding the coefficients (eigenvector) for one specific energy</b> — worked for $E_1$ ($x=-\frac{1+\sqrt5}{2}$)</div>
+<div class="ex">
+<b>Step 1</b> — plug that $x$ back into the original matrix-vector equation:
+$$\begin{pmatrix}x&1&0&0\\1&x&1&0\\0&1&x&1\\0&0&1&x\end{pmatrix}\begin{pmatrix}c_1\\c_2\\c_3\\c_4\end{pmatrix}=0$$
+<b>Step 2</b> — each row gives one linear relation between the $c$'s. Row 1: $xc_1+c_2=0\Rightarrow c_2=-xc_1=\dfrac{1+\sqrt5}{2}c_1$. Working through rows 2-4 the same way gives $c_3=\dfrac{1+\sqrt5}{2}c_1$ and $c_4=c_1$ — so every coefficient is now expressed as a multiple of $c_1$.<br>
+<b>Step 3</b> — normalize: $c_1^2+c_2^2+c_3^2+c_4^2=1$. Substituting the ratios above and solving gives $c_1=$<span class="bl w"><span class="a">$\dfrac{1}{\sqrt{5+\sqrt5}}\approx0.372$</span></span>, hence $c_2=c_3\approx0.602$.<br>
+<b>Step 4</b> — assemble: $\psi_1=0.372\chi_1+0.602\chi_2+0.602\chi_3+0.372\chi_4$ (matches Tree 9's stated coefficients — this is where they come from).
+</div>
+</div>
+
+<div class="card lecture">
+<div class="res"><b>For larger systems (benzene $6\times6$, naphthalene $10\times10$)</b>: hand-expanding is impractical — your course material itself says these are normally solved with software.</div>
+<div class="cite">By <b>convention(慣習)により</b> — what you're expected to do by hand is (a) set up the matrix correctly from the bonding pattern, and (b) use <b>molecular symmetry</b> to predict qualitative features without solving: the number of nodes increases with energy, and node positions/coefficient signs for a symmetric molecule can often be read off directly (e.g. benzene's node pattern in Tree 9) rather than computed.</div>
+</div>
+
+<div class="trap"><b>[!] Trap</b>: the sign in front of each cofactor is <span class="bl w"><span class="a">$(-1)^{i+j}$</span></span>, not always $+$ — for the element in row 1, column 2, that's $(-1)^{1+2}=-1$, so you subtract that cofactor's contribution (as done in Step 2 above) — a sign error here is the single most common mistake in this calculation.</div>
 </div>
 
 
@@ -615,6 +770,9 @@ Dissociation energy of $\mathrm{H_2}$ $=I_{p,\max}-\mathrm{IE(H)}=18.1-13.6=$<sp
 <tr><td>Magic angle</td><td>$\theta=54.7°$ ($\cos\theta=1/\sqrt3$, for an $I=1/2$ system)</td></tr>
 <tr><td>Hückel parameters</td><td>$\alpha$ (Coulomb integral, $&lt;0$), $\beta$ (resonance integral, $&lt;0$) — always leave these as symbols in the final answer, never assign numeric values</td></tr>
 <tr><td>H-atom ionization energy</td><td>$13.6\ \mathrm{eV}$ (reused often, e.g. in UPS problems)</td></tr>
+<tr><td>Hydrogen-like energy levels</td><td>$E_n=-\dfrac{Z^2}{n^2}\times13.6\ \mathrm{eV}$ (scales as $Z^2$ — e.g. $\mathrm{He^+}$ is $4\times$ H's ionization energy)</td></tr>
+<tr><td>Orbitals per subshell</td><td>s:1, p:3, d:5, f:7 (formula $2l+1$); max electrons $2(2l+1)$; shell total $2n^2$</td></tr>
+<tr><td>Cr, Cu exceptions</td><td>Cr $=[\mathrm{Ar}]4s^13d^5$ (not $4s^23d^4$); Cu $=[\mathrm{Ar}]4s^13d^{10}$ (not $4s^23d^9$)</td></tr>
 <tr><td>UV cell material by usable range</td><td>quartz 190〜2500 nm / glass 320〜2500 nm / polystyrene 340〜750 nm / PMMA 285〜750 nm</td></tr>
 </table>
 <div class="nomat"><b>Outside exam scope</b> (introduced conceptually in lecture only, no computation required): the rigorous derivation of selection rules via group theory (point-group classification, irreducible representations), the explicit functional form of DFT's exchange-correlation potential $V_{XC}(\mathbf r)$, and d-orbital hybridization cases beyond SF₆/PCl₅.</div>
@@ -633,6 +791,8 @@ Dissociation energy of $\mathrm{H_2}$ $=I_{p,\max}-\mathrm{IE(H)}=18.1-13.6=$<sp
 <div class="trap"><b>⑧</b> Cyclobutadiene's degenerate HOMO ($\psi_2,\psi_3$, $E=\alpha$) gives a <b>triplet ground state</b> by Hund's rule — be sure to distinguish this from butadiene (the chain form), which is not degenerate.</div>
 <div class="trap"><b>⑨</b> $g\leftrightarrow g$ and $u\leftrightarrow u$ transitions are forbidden by the Laporte rule in homonuclear molecules — heteronuclear molecules don't even have $g/u$ labels to begin with.</div>
 <div class="trap"><b>⑩</b> Fluorescence ($S_1\to S_0$, $\Delta S=0$) is fast; phosphorescence ($T_1\to S_0$, spin flip) is formally forbidden but occurs slowly via spin-orbit coupling — don't confuse it with intersystem crossing (ISC, $S_1\to T_1$).</div>
+<div class="trap"><b>⑪</b> $4s$ fills before $3d$ going in, but once both are occupied, $3d$ is <i>more</i> tightly bound (higher $Z_{\mathrm{eff}}$, per trap ③) — this is exactly why Cr/Cu "steal" an electron back from $4s$ into $3d$ to reach a half-/fully-filled subshell.</div>
+<div class="trap"><b>⑫</b> When expanding a $4\times4$ (or larger) determinant by cofactors, the sign $(-1)^{i+j}$ alternates per element — forgetting to flip it on the second, fourth, etc. term is the most common arithmetic slip (see Tree 11).</div>
 </div>
 
 </div>
