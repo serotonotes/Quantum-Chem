@@ -2,7 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#17324F">
 <title>Physical Chemistry II Decision-Tree Cheat Sheet (Drill/Blanks Version)</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
@@ -141,6 +143,45 @@ body.reveal .bl .a{visibility:visible}
   *{print-color-adjust:exact; -webkit-print-color-adjust:exact}
 }
 body.print-answers .bl .a{visibility:visible}
+
+/* ---------- responsive: tablet ---------- */
+@media (max-width: 900px){
+  body{font-size:14.5px}
+  .page-wrap{padding:10px 10px 32px}
+  header.top{flex-direction:column}
+  .legend{margin-top:8px}
+  .cols{column-count:1 !important}
+  .router table{font-size:.86em}
+}
+
+/* ---------- responsive: phone / portrait ---------- */
+@media (max-width: 600px){
+  body{font-size:15.5px; line-height:1.55}
+  .page-wrap{padding:8px 8px 40px; padding-bottom:calc(40px + env(safe-area-inset-bottom))}
+  header.top{padding-top:calc(14px + env(safe-area-inset-top))}
+  header.top h1{font-size:1.22em}
+  header.top .sub{font-size:.82em}
+  .legend{gap:6px}
+  .legend span{font-size:.72em; padding:2px 6px}
+  .tree{padding:10px 11px; margin-bottom:11px}
+  .tree h2{font-size:1.02em; flex-wrap:wrap}
+  .q{font-size:.9em}
+  .card{font-size:.9em; padding:9px 10px}
+  .cite,.ex{font-size:.87em}
+  /* router table -> stacked cards instead of a cramped grid */
+  .router table,.router thead,.router tbody,.router th,.router td,.router tr{display:block}
+  .router thead{display:none}
+  .router tr{border:1px solid var(--line); border-radius:6px; margin-bottom:6px; padding:6px 8px}
+  .router td{border:none; padding:2px 0}
+  .router td.go{font-weight:700; margin-top:2px}
+  /* bigger tap targets for drill blanks (Apple HIG ~44pt touch target) */
+  .bl{min-width:3.4em; padding:5px 10px; min-height:26px; line-height:24px}
+  .bl.w{min-width:6em} .bl.xw{min-width:10em} .bl.xxw{min-width:100%}
+  .toolbar{padding:8px; gap:8px}
+  .toolbar button{padding:10px 14px; font-size:.9em; flex:1 1 auto; min-height:40px}
+  .toolbar .cnt{flex:1 1 100%; text-align:center; margin-left:0}
+  .tips{padding:12px 14px}
+}
 </style>
 </head>
 <body>
